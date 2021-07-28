@@ -1,12 +1,10 @@
-html, body {
-  height: 100vh;
-}
 body {
   /* background-color: #730E13; */
   color: white;
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   text-align: justify;
+  padding-top: 75px;
 }
 
 @font-face {
@@ -19,56 +17,42 @@ body {
   font-family: "Now";
   src: url("fonts/Now-Regular.otf")format("opentype");
 }
+.main-page {
+  background-image: url("../images/modified-images/jen-picnic.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
-#front-page-background::before {
-  background-image: url("../images/jen-picnic.png");
-}
-#bio-background::before {
-  background-image: url("../images/jen_piano.jpg");
-  background-position: top;
-}
-#audio-background::before {
-  background-image: url("../images/genie-wallpaper3.jpg");
+.audio-page {
+  background-image: url("../images/modified-images/genie-wallpaper3.jpg");
   background-size: 200px;
   background-repeat: repeat;
-  opacity: 0.4;
+    background-attachment: fixed;
 }
-#video-background::before {
-  background-image: url("../images/jenny_glam_piano.jpg");
-  background-position: top;
+.bio-page {
+  background-image: url("../images/modified-images/jen_piano.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-#calendar-background::before{
-  background-image: url("../images/orange-retro-tile.jpg");
+.video-page {
+  background-image: url("../images/modified-images/jenny_glam_piano.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.calendar-page {
+  background-image: url("../images/modified-images/orange-retro-tile.jpg");
   background-size: 350px;
   background-repeat: repeat;
-  opacity: 0.4;
+  background-attachment: fixed;
 }
-#contact-background::before {
-  background-image: url("../images/star-wallpaper-tile2.jpeg");
+.contact-page {
+  background-image: url("../images/modified-images/star-wallpaper-tile2.jpg");
   background-size: 200px;
   background-repeat: repeat;
-  opacity: 0.4;
-}
-.background {
-  height: 100vh;
-  top:0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
-.background::before {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-  opacity: 0.75;
+  background-attachment: fixed;
 }
 
 .navbar {
@@ -125,16 +109,6 @@ h3 {
   letter-spacing: 0.5px;
 }
 
-/* footer {
-  text-align: center;
-  margin-top: 1%;
-  margin-bottom: 2%;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-} */
-
 p {
   color: black;
 }
@@ -151,6 +125,7 @@ p {
   margin: auto;
   background-color: rgba(255,255,255,0.8);
   padding: 8px;
+  margin-bottom: 15px;
 }
 
 .bio-text {
@@ -211,6 +186,7 @@ iframe {
   text-align: center;
   background-color: rgba(255,255,255,0.7);
   color: black;
+  margin-bottom: 15px;
 }
 
 .contact-uses {
